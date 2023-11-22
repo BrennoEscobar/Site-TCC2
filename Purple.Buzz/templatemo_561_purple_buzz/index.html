@@ -16,28 +16,24 @@
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
-<!--
-    
-TemplateMo 561 Purple Buzz
+    <!-- Dark Mode Stylesheet -->
+    <link href="css/dark-mode.css" rel="stylesheet">
 
-https://templatemo.com/tm-561-purple-buzz
+    <!---
+    TemplateMo 561 Purple Buzz
 
--->
+    https://templatemo.com/tm-561-purple-buzz
+
+    -->
 </head>
 
 <body>
-    <button id="btnToggleTheme" class="btn btn-primary">Toggle Theme</button>
+    <!-- ________ DARK MODE ________ -->
 
-    <script>
-        document.getElementById('btnToggleTheme').addEventListener('click', function() {
-            // Seleciona o elemento body
-            var body = document.body;
-    
-            // Alterna a classe dark-theme no body
-            body.classList.toggle('dark-theme');
-        });
-    </script>
-    
+    <img src="img/dark.png" width="120" height="50" class="posi" id="imgDark" onclick="DarkMode()" />
+
+    <!-- ________ DARK MODE ________ -->
+
 
     <!-- Header -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
@@ -46,11 +42,14 @@ https://templatemo.com/tm-561-purple-buzz
                 <i class='bx bx-buildings bx-sm text-dark'></i>
                 <span class="text-dark h4">Déficit</span> <span class="text-primary h4">Digital</span>
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
                 <div class="flex-fill mx-xl-5 mb-2">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                         <li class="nav-item">
@@ -92,36 +91,44 @@ https://templatemo.com/tm-561-purple-buzz
                     <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
                     <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
                 </ol>
-                
 
-                        <div class="py-5 row d-flex align-items-center">
-                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
-                                <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
-                                    Develop <strong>Strategies</strong> for 
-                                  <br>your business
-                              </h1>
-                                <p class="banner-body text-muted py-3 mx-0 px-0">
-                                    Purple Buzz is a corporate HTML template with Bootstrap 5 Beta 1. This CSS template is 100% free to download provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a>. Total 6 HTML pages included in this template. Icon fonts by <a rel="nofollow" href="https://boxicons.com/" target="_blank">Boxicons</a>. Photos are from <a rel="nofollow" href="https://unsplash.com/" target="_blank">Unsplash</a> and <a rel="nofollow" href="https://icons8.com/" target="_blank">Icons 8</a>.
-                              </p>
-                            </div>
-                        </div>
 
-                        </div>
-
+                <div class="py-5 row d-flex align-items-center">
+                    <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                        <h1
+                            class="banner-heading h1 text-secondary display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
+                            Develop <strong>Strategies</strong> for
+                            <br>your business
+                        </h1>
+                        <p class="banner-body text-muted py-3 mx-0 px-0">
+                            Purple Buzz is a corporate HTML template with Bootstrap 5 Beta 1. This CSS template is 100%
+                            free to download provided by <a rel="nofollow" href="https://templatemo.com/page/1"
+                                target="_parent">TemplateMo</a>. Total 6 HTML pages included in this template. Icon
+                            fonts by <a rel="nofollow" href="https://boxicons.com/" target="_blank">Boxicons</a>. Photos
+                            are from <a rel="nofollow" href="https://unsplash.com/" target="_blank">Unsplash</a> and <a
+                                rel="nofollow" href="https://icons8.com/" target="_blank">Icons 8</a>.
+                        </p>
                     </div>
                 </div>
-                <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                    <i class='bx bx-chevron-left'></i>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                    <i class='bx bx-chevron-right'></i>
-                    <span class="visually-hidden">Next</span>
-                </a>
+
             </div>
-            <!-- End slider -->
 
         </div>
+    </div>
+    <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button"
+        data-bs-slide="prev">
+        <i class='bx bx-chevron-left'></i>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button"
+        data-bs-slide="next">
+        <i class='bx bx-chevron-right'></i>
+        <span class="visually-hidden">Next</span>
+    </a>
+    </div>
+    <!-- End slider -->
+
+    </div>
     </div>
     <!-- End Banner Hero -->
 
@@ -140,7 +147,9 @@ https://templatemo.com/tm-561-purple-buzz
                 </div>
             </div>
             <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
-                You are free to use this template for your commercial or business websites. You are not allowed to re-distribute this template ZIP file on any template collection websites. It is too easy to illegally copy and repost this template.
+                You are free to use this template for your commercial or business websites. You are not allowed to
+                re-distribute this template ZIP file on any template collection websites. It is too easy to illegally
+                copy and repost this template.
             </p>
         </div>
 
@@ -148,16 +157,20 @@ https://templatemo.com/tm-561-purple-buzz
             <div class="col-md-12">
                 <ul class="nav d-flex justify-content-center">
                     <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary active shadow rounded-pill text-light px-4 light-300" href="#" data-filter=".project">All</a>
+                        <a class="filter-btn nav-link btn-outline-primary active shadow rounded-pill text-light px-4 light-300"
+                            href="#" data-filter=".project">All</a>
                     </li>
                     <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".graphic">Graphics</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            href="#" data-filter=".graphic">Graphics</a>
                     </li>
                     <li class="filter-btn nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".ui">UI/UX</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            href="#" data-filter=".ui">UI/UX</a>
                     </li>
                     <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".branding">Branding</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            href="#" data-filter=".branding">Branding</a>
                     </li>
                 </ul>
             </div>
@@ -174,7 +187,8 @@ https://templatemo.com/tm-561-purple-buzz
                     <img class="service card-img" src="./assets/img/services-01.jpg" alt="Card image">
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">UI/UX design</span>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">UI/UX
+                                design</span>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                         </div>
                     </div>
@@ -187,7 +201,8 @@ https://templatemo.com/tm-561-purple-buzz
                     <img class="card-img" src="./assets/img/services-02.jpg" alt="Card image">
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Social Media</span>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Social
+                                Media</span>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                         </div>
                     </div>
@@ -226,7 +241,8 @@ https://templatemo.com/tm-561-purple-buzz
                     <img class="card-img" src="./assets/img/services-05.jpg" alt="Card image">
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Digtal Marketing</span>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Digtal
+                                Marketing</span>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                         </div>
                     </div>
@@ -239,7 +255,8 @@ https://templatemo.com/tm-561-purple-buzz
                     <img class="card-img" src="./assets/img/services-06.jpg" alt="Card image">
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Market Research</span>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Market
+                                Research</span>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                         </div>
                     </div>
@@ -430,7 +447,7 @@ https://templatemo.com/tm-561-purple-buzz
                         </li>
                         <li class="list-inline-item m-0">
                             <a class="text-light" target="_blank" href="https://www.medium.com/">
-                                <i class='bx bxl-medium-square bx-md' ></i>
+                                <i class='bx bxl-medium-square bx-md'></i>
                             </a>
                         </li>
                     </ul>
@@ -440,19 +457,24 @@ https://templatemo.com/tm-561-purple-buzz
                     <h3 class="h4 pb-lg-3 text-light light-300">Our Company</h2>
                         <ul class="list-unstyled text-light light-300">
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">Home</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light" href="index.html">Home</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="about.html">About Us</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="about.html">About Us</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">Work</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="work.html">Work</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                    class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
                             </li>
                         </ul>
                 </div>
@@ -461,22 +483,28 @@ https://templatemo.com/tm-561-purple-buzz
                     <h2 class="h4 pb-lg-3 text-light light-300">Our Works</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Branding</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Branding</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Business</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Business</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Marketing</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Marketing</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Social Media</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Social Media</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Digital Solution</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Digital Solution</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Graphic</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Graphic</a>
                         </li>
                     </ul>
                 </div>
@@ -485,10 +513,12 @@ https://templatemo.com/tm-561-purple-buzz
                     <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:010-020-0340">010-020-0340</a>
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="tel:010-020-0340">010-020-0340</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:info@company.com">info@company.com</a>
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="mailto:info@company.com">info@company.com</a>
                         </li>
                     </ul>
                 </div>
@@ -506,7 +536,8 @@ https://templatemo.com/tm-561-purple-buzz
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-end text-center text-light light-300">
-                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://templatemo.com/" target="_blank"><strong>TemplateMo</strong></a>
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light"
+                                href="https://templatemo.com/" target="_blank"><strong>TemplateMo</strong></a>
                         </p>
                     </div>
                 </div>
@@ -525,13 +556,13 @@ https://templatemo.com/tm-561-purple-buzz
     <script src="assets/js/isotope.pkgd.js"></script>
     <!-- Page Script -->
     <script>
-        $(window).load(function() {
+        $(window).load(function () {
             // init Isotope
             var $projects = $('.projects').isotope({
                 itemSelector: '.project',
                 layoutMode: 'fitRows'
             });
-            $(".filter-btn").click(function() {
+            $(".filter-btn").click(function () {
                 var data_filter = $(this).attr("data-filter");
                 $projects.isotope({
                     filter: data_filter
@@ -552,14 +583,15 @@ https://templatemo.com/tm-561-purple-buzz
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
 
+    <script src="dark.js"></script>
 </body>
 
 </html>
