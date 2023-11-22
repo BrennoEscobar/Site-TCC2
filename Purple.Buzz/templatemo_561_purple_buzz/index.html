@@ -26,6 +26,19 @@ https://templatemo.com/tm-561-purple-buzz
 </head>
 
 <body>
+    <button id="btnToggleTheme" class="btn btn-primary">Toggle Theme</button>
+
+    <script>
+        document.getElementById('btnToggleTheme').addEventListener('click', function() {
+            // Seleciona o elemento body
+            var body = document.body;
+    
+            // Alterna a classe dark-theme no body
+            body.classList.toggle('dark-theme');
+        });
+    </script>
+    
+
     <!-- Header -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
         <div class="container d-flex justify-content-between align-items-center">
@@ -90,7 +103,6 @@ https://templatemo.com/tm-561-purple-buzz
                                 <p class="banner-body text-muted py-3 mx-0 px-0">
                                     Purple Buzz is a corporate HTML template with Bootstrap 5 Beta 1. This CSS template is 100% free to download provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a>. Total 6 HTML pages included in this template. Icon fonts by <a rel="nofollow" href="https://boxicons.com/" target="_blank">Boxicons</a>. Photos are from <a rel="nofollow" href="https://unsplash.com/" target="_blank">Unsplash</a> and <a rel="nofollow" href="https://icons8.com/" target="_blank">Icons 8</a>.
                               </p>
-                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="#" role="button">Get Started</a>
                             </div>
                         </div>
 
@@ -536,6 +548,17 @@ https://templatemo.com/tm-561-purple-buzz
     <script src="assets/js/templatemo.js"></script>
     <!-- Custom -->
     <script src="assets/js/custom.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
 </body>
 
