@@ -17,6 +17,61 @@ Table of contents
 8. Contact
 --------------------------------------------- */
 
+.botao-fixado {
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  z-index: 9999;
+
+}
+
+.dark-mode,
+.dark-mode html {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode main {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode .text-start {
+  color: white !important;
+}
+
+.dark-mode .container {
+  background-color: rgb(29, 29, 29) !important;
+}
+
+.dark-mode .navbar {
+  background-color: rgb(29, 29, 29) !important;
+}
+
+.dark-mode .h4 {
+  color: white !important;
+}
+
+.dark-mode .bx-buildings {
+  color: white !important;
+}
+
+.dark-mode .nav-link {
+  color: white !important;
+}
+
+.dark-mode .card-title {
+  color: black !important;
+}
+
+.dark-mode .card-text {
+  color: black !important;
+}
+
 html {font-family: 'Open Sans', sans-serif;}
 /* Typography */
 p, a {font-weight: 400;}
