@@ -27,17 +27,25 @@ https://templatemo.com/tm-561-purple-buzz
 
 <body>
 
-    <img src="https://cdn-icons-png.flaticon.com/512/5977/5977091.png" width="100px" height="100px" onclick="darkMode()" class="botao-fixado" />
+    <!-- Botões para ajustar o tamanho da fonte -->
+<div class="font-size-controls">
+    <button onclick="changeFontSize(1)">Aumentar Fonte</button>
+    <button onclick="resetFontSize()">Tamanho Padrão</button>
+    <button onclick="changeFontSize(-1)">Diminuir Fonte</button>
+  </div>
+  
+
+    <img src="https://cdn-icons-png.flaticon.com/128/5720/5720464.png" width="90px" height="90px" onclick="darkMode()" class="botao-fixado" />
     <script>
       function darkMode() {
         let minhaImagem = document.querySelector('img');
         var element = document.body;
         element.classList.toggle("dark-mode");
         let meuSrc = minhaImagem.getAttribute('src');
-        if (meuSrc === 'https://cdn-icons-png.flaticon.com/512/5977/5977091.png') {
-          minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/5977/5977128.png');
+        if (meuSrc === 'https://cdn-icons-png.flaticon.com/128/5720/5720464.png') {
+          minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/5720/5720465.png');
         } else {
-          minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/5977/5977091.png');
+          minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/128/5720/5720464.png');
         }
       }
     </script>
@@ -537,6 +545,33 @@ https://templatemo.com/tm-561-purple-buzz
             });
         });
     </script>
+
+<script>
+    // Função para alterar o tamanho da fonte
+    function changeFontSize(delta) {
+      // Obtém todos os elementos de texto no corpo da página
+      var textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, a');
+  
+      // Itera sobre cada elemento de texto e ajusta o tamanho da fonte
+      textElements.forEach(function (element) {
+        var currentFontSize = window.getComputedStyle(element).fontSize;
+        var newSize = parseFloat(currentFontSize) + delta;
+        element.style.fontSize = newSize + 'px';
+      });
+    }
+  
+    // Função para restaurar o tamanho padrão da fonte
+    function resetFontSize() {
+      // Obtém todos os elementos de texto no corpo da página
+      var textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, a');
+  
+      // Itera sobre cada elemento de texto e redefine o tamanho da fonte para o padrão
+      textElements.forEach(function (element) {
+        element.style.fontSize = '';
+      });
+    }
+  </script>
+  
     <!-- Templatemo -->
     <script src="assets/js/templatemo.js"></script>
     <!-- Custom -->

@@ -12,3 +12,4 @@ function DarkMode() {
         minhaImagem.setAttribute('src', '../img/dark.png');
     }
 }
+
